@@ -125,7 +125,6 @@
         <DCC_DcuOutput>.\debugunit\x64</DCC_DcuOutput>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <BT_BuildType>Debug</BT_BuildType>
-        <Icon_MainIcon>DaggerfallUnityLauncher_Icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <Manifest_File>None</Manifest_File>
@@ -156,7 +155,6 @@
         <DCC_DcuOutput>.\unit\x64</DCC_DcuOutput>
         <BT_BuildType>Debug</BT_BuildType>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <Icon_MainIcon>DaggerfallUnityLauncher_Icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
