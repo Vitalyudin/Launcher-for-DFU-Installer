@@ -11068,30 +11068,13 @@ object MainWindow: TMainWindow
     Caption = #1057#1072#1081#1090' '#1087#1088#1086#1077#1082#1090#1072
     Font.Charset = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -15
-    Font.Name = 'Corbel'
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
     OnClick = DF_UnitySiteButClick
-  end
-  object DF_LaunchBut: TSpeedButton
-    Left = 99
-    Top = 270
-    Width = 200
-    Height = 34
-    Cursor = crHandPoint
-    Caption = #1047#1072#1087#1091#1089#1090#1080#1090#1100
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -15
-    Font.Name = 'Corbel'
-    Font.Style = []
-    ParentFont = False
-    ParentShowHint = False
-    ShowHint = False
-    OnClick = DF_LaunchButClick
   end
   object DF_DeletThisBut: TSpeedButton
     Left = 99
@@ -11102,8 +11085,8 @@ object MainWindow: TMainWindow
     Caption = #1059#1076#1072#1083#1080#1090#1100
     Font.Charset = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -15
-    Font.Name = 'Corbel'
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
     OnClick = DF_DeletThisButClick
@@ -11117,12 +11100,29 @@ object MainWindow: TMainWindow
     Caption = #1057#1090#1088#1072#1085#1080#1094#1072' '#1085#1072' TESALL'
     Font.Charset = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -15
-    Font.Name = 'Corbel'
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
     OnClick = DF_TesallButtClick
+  end
+  object DF_LaunchBut: TSpeedButton
+    Left = 99
+    Top = 270
+    Width = 200
+    Height = 34
+    Cursor = crHandPoint
+    Caption = #1047#1072#1087#1091#1089#1090#1080#1090#1100' Daggerfall Unity'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    OnClick = DF_LaunchButClick
   end
 end

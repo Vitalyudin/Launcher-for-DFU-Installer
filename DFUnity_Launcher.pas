@@ -35,9 +35,7 @@ type
     procedure DF_UnitySiteButClick(Sender: TObject);
     procedure DF_LaunchButClick(Sender: TObject);
     procedure DF_DeletThisButClick(Sender: TObject);
-    procedure DF_ManualButClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure DF_ExitButClick(Sender: TObject);
     procedure DF_TesallButtClick(Sender: TObject);
 
   private
@@ -55,30 +53,37 @@ implementation
 
 {$R *.dfm}
 
-
 procedure DFUnityDeleting;
 begin
-ShellExecute(MainWindow.handle, 'open', UninstPath, nil, nil, sw_shownormal);
-Application.Terminate;
+  ShellExecute(MainWindow.handle, 'open', UninstPath, nil, nil, sw_shownormal);
+  Application.Terminate;
 end;
 
 procedure DFUnityLaunch;
 begin
-ShellExecute(MainWindow.handle, 'open', DFUexepath, nil, nil, sw_shownormal);
+  ShellExecute(MainWindow.handle, 'open', DFUexepath, nil, nil, sw_shownormal);
 //Application.Terminate;
 end;
 
 
 procedure TMainWindow.FormCreate(Sender: TObject);
+var LaunchButNewTop: integer;
 begin
 TesallPage:='https://tesall.ru/files/modi-dlya-drugikh-igr/10820-daggerfall-unity-installer';
 DFUnitySite:='https://www.dfworkshop.net';
 DFUexePath:='.\Daggerfallunity\DaggerfallUnity.exe';
 UninstPath:='.\unins000.exe';
-GuidePath:='.\Daggerfall Unity Manual.pdf';
 EXENotFound:='Файл "DaggerfallUnity.exe" не найден. Возможно, он был перемещён или удалён. Во втором случае придётся переустановить Daggerfall Unity.';
 UninstNotFound:='Деинсталлятор не найден - возможно, был перемещён или удалён. В таком случае просто удалите всё вручную.';
-GuideNotFound:='Файл руководства "Daggerfall Unity Manual.pdf" не найден. Возможно, был перемещён или удалён.';
+
+LaunchButNewTop := DF_LaunchBut.Top + (DF_DeletThisBut.Top - DF_LaunchBut.Top);
+
+  case FileExists(UninstPath) of
+    true:  DF_DeletThisBut.top:=DF_DeletThisBut.top;
+    false: DF_LaunchBut.Top:=DF_LaunchBut.Top + 32;
+
+  end;
+
 end;
 
 
@@ -96,12 +101,6 @@ begin
   else ShowMessage(EXENotFound);
 end;
 
-procedure TMainWindow.DF_ManualButClick(Sender: TObject);
-begin
-  if FileExists(GuidePath)
-    then ShellExecute(handle, 'open', GuidePath, nil, nil, sw_show)
-  else     Showmessage(GuideNotFound);
-end;
 
 procedure TMainWindow.DF_UnitySiteButClick(Sender: TObject);
 begin
@@ -111,12 +110,6 @@ end;
 procedure TMainWindow.DF_TesallButtClick(Sender: TObject);
 begin
   ShellExecute(handle, 'open', TesallPage, nil, nil, sw_show);
-end;
-
-
-procedure TMainWindow.df_exitbutClick(Sender: TObject);
-begin
-Application.Terminate;
 end;
 
 end.
