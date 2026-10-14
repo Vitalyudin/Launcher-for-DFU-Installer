@@ -1,8 +1,35 @@
+# Результаты сборки (пути из DaggerfallUnityLauncher.dproj)
+/out/
+/unit/
+/debugexe/
+/debugunit/
+/pkg/
+/Win32/
+/Win64/
+*.dcu
+*.exe
+*.map
+*.rsm
+*.drc
+*.tds
+*.jdbg
+*.dres
+*.cmds
+# Иконка, версия и манифест - генерируются из .dproj при каждой сборке
+/DaggerfallUnityLauncher.res
+# Компилируется из DFUnity_Fonts.rc при сборке
+/DFUnity_Fonts.res
+
+# Локальные файлы IDE Delphi
 __history/
-DaggerfallUnityLauncher.dproj.local
-DaggerfallUnityLauncher.identcache
-out
-unit
-debugunit
-debugexe
-icon/DAGGER.ICO
+__recovery/
+*.local
+*.identcache
+*.stat
+*.dsk
+*.tvsconfig
+*.~*
+
+# Локальные файлы
+/icon/DAGGER.ICO
+.claude/settings.local.json

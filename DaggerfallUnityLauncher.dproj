@@ -58,7 +58,14 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <VCL_Custom_Styles>&quot;Carbon|VCLSTYLE|$(PUBLIC)\Documents\RAD Studio\12.0\Styles\Carbon.vsf&quot;</VCL_Custom_Styles>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_MajorVer>3</VerInfo_MajorVer>
+        <VerInfo_MinorVer>1</VerInfo_MinorVer>
+        <VerInfo_Release>0</VerInfo_Release>
+        <VerInfo_Build>0</VerInfo_Build>
+        <VerInfo_AutoGenVersion>false</VerInfo_AutoGenVersion>
+        <VerInfo_Locale>1049</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=Daggerfall Unity Launcher;FileVersion=3.1.0.0;InternalName=DaggerfallUnityLauncher;LegalCopyright=;LegalTrademarks=;OriginalFilename=DaggerfallUnityLauncher.exe;ProductName=Daggerfall Unity Launcher;ProductVersion=3.1.0.0;Comments=</VerInfo_Keys>
         <DCC_UsePackage>rtl;$(DCC_UsePackage)</DCC_UsePackage>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
@@ -70,31 +77,25 @@
         <DCC_F>false</DCC_F>
         <DCC_K>false</DCC_K>
         <SanitizedProjectName>DaggerfallUnityLauncher</SanitizedProjectName>
-        <VerInfo_Locale>1049</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>vcl;vclx;vclimg;$(DCC_UsePackage)</DCC_UsePackage>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_Namespace>Winapi;System.Win;Data.Win;Web.Win;$(DCC_Namespace)</DCC_Namespace>
-        <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
         <DCC_ExeOutput>.\out\x32</DCC_ExeOutput>
         <Icon_MainIcon>DaggerfallUnityLauncher_Icon.ico</Icon_MainIcon>
-        <AppDPIAwarenessMode>system</AppDPIAwarenessMode>
+        <AppDPIAwarenessMode>gdiScaling</AppDPIAwarenessMode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
         <DCC_UsePackage>vcl;vclx;vclimg;$(DCC_UsePackage)</DCC_UsePackage>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_Namespace>Winapi;System.Win;Data.Win;Web.Win;$(DCC_Namespace)</DCC_Namespace>
-        <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
         <DCC_ExeOutput>.\out\x64</DCC_ExeOutput>
-        <AppDPIAwarenessMode>system</AppDPIAwarenessMode>
+        <AppDPIAwarenessMode>gdiScaling</AppDPIAwarenessMode>
         <DCC_Inlining>auto</DCC_Inlining>
         <DCC_ImportedDataReferences>false</DCC_ImportedDataReferences>
         <Icon_MainIcon>DaggerfallUnityLauncher_Icon.ico</Icon_MainIcon>
@@ -105,62 +106,45 @@
         <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
         <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
         <DCC_RemoteDebug>true</DCC_RemoteDebug>
-        <VerInfo_Locale>1049</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_ExeOutput>.\debugexe\x32</DCC_ExeOutput>
         <DCC_DcuOutput>.\debugunit\x32</DCC_DcuOutput>
-        <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <BT_BuildType>Debug</BT_BuildType>
         <Icon_MainIcon>DaggerfallUnityLauncher_Icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_ExeOutput>.\debugexe\x64</DCC_ExeOutput>
-        <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_DcuOutput>.\debugunit\x64</DCC_DcuOutput>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <BT_BuildType>Debug</BT_BuildType>
         <Icon_MainIcon>DaggerfallUnityLauncher_Icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
-        <Manifest_File>None</Manifest_File>
-        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
-        <VerInfo_Locale>1049</VerInfo_Locale>
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
         <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
         <DCC_DebugInformation>0</DCC_DebugInformation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <PostBuildEvent><![CDATA[if exist "$(MSBuildProjectDirectory)\..\Daggerfall Unity Installer\Installer_Files\Launcher\x32" (copy /Y "$(MSBuildProjectDirectory)\$(DCC_ExeOutput)\$(MSBuildProjectName).exe" "$(MSBuildProjectDirectory)\..\Daggerfall Unity Installer\Installer_Files\Launcher\x32") else (echo Installer folder not found, copy skipped)]]></PostBuildEvent>
         <DCC_BplOutput>.\pkg\</DCC_BplOutput>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <Icon_MainIcon>DaggerfallUnityLauncher_Icon.ico</Icon_MainIcon>
         <DCC_ExeOutput>.\out\x32</DCC_ExeOutput>
         <DCC_DcuOutput>.\unit\x32</DCC_DcuOutput>
         <BT_BuildType>Debug</BT_BuildType>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <VerInfo_MajorVer>3</VerInfo_MajorVer>
-        <VerInfo_MinorVer>1</VerInfo_MinorVer>
-        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=3.1.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
-        <VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
-        <VerInfo_Keys>CompanyName=;FileVersion=3.1.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
-        <VerInfo_MajorVer>3</VerInfo_MajorVer>
+        <PostBuildEvent><![CDATA[if exist "$(MSBuildProjectDirectory)\..\Daggerfall Unity Installer\Installer_Files\Launcher\x64" (copy /Y "$(MSBuildProjectDirectory)\$(DCC_ExeOutput)\$(MSBuildProjectName).exe" "$(MSBuildProjectDirectory)\..\Daggerfall Unity Installer\Installer_Files\Launcher\x64") else (echo Installer folder not found, copy skipped)]]></PostBuildEvent>
         <DCC_BplOutput>.\pkg\</DCC_BplOutput>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_ExeOutput>.\out\x64</DCC_ExeOutput>
         <DCC_DcuOutput>.\unit\x64</DCC_DcuOutput>
         <BT_BuildType>Debug</BT_BuildType>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <Icon_MainIcon>DaggerfallUnityLauncher_Icon.ico</Icon_MainIcon>
-        <VerInfo_MinorVer>1</VerInfo_MinorVer>
-        <VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -168,6 +152,17 @@
         </DelphiCompile>
         <DCCReference Include="DFUnity_Launcher.pas">
             <Form>MainWindow</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="DFUnity_Strings.pas"/>
+        <DCCReference Include="DFUnity_Config.pas"/>
+        <DCCReference Include="DFUnity_Updater.pas"/>
+        <DCCReference Include="DFUnity_AccentButton.pas"/>
+        <RcCompile Include="DFUnity_Fonts.rc">
+            <Form>DFUnity_Fonts.res</Form>
+        </RcCompile>
+        <DCCReference Include="DFUnity_SettingsForm.pas">
+            <Form>SettingsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
@@ -188,10 +183,10 @@
         <BorlandProject>
             <Delphi.Personality>
                 <VersionInfo>
-                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
                     <VersionInfo Name="AutoIncBuild">False</VersionInfo>
-                    <VersionInfo Name="MajorVer">1</VersionInfo>
-                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="MajorVer">3</VersionInfo>
+                    <VersionInfo Name="MinorVer">1</VersionInfo>
                     <VersionInfo Name="Release">0</VersionInfo>
                     <VersionInfo Name="Build">0</VersionInfo>
                     <VersionInfo Name="Debug">False</VersionInfo>
@@ -205,13 +200,13 @@
                 <VersionInfoKeys>
                     <VersionInfoKeys Name="CompanyName"/>
                     <VersionInfoKeys Name="FileDescription"/>
-                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileVersion">3.1.0.0</VersionInfoKeys>
                     <VersionInfoKeys Name="InternalName"/>
                     <VersionInfoKeys Name="LegalCopyright"/>
                     <VersionInfoKeys Name="LegalTrademarks"/>
                     <VersionInfoKeys Name="OriginalFilename"/>
                     <VersionInfoKeys Name="ProductName"/>
-                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="ProductVersion">3.1.0.0</VersionInfoKeys>
                     <VersionInfoKeys Name="Comments"/>
                 </VersionInfoKeys>
                 <Source>
